@@ -15,11 +15,15 @@ One Line of Earned Pride 赏金 — 写一行 1-240 字符的文本，放在 /ou
 ## 未解决 / 卡在哪
 - 尚未提交第一行 entry（Round 1 截止约 2026-11-25 11:15 PM）
 
-## 下一步
-1. 写一行 entry 文本 → 放到 /output/entry.txt
-2. 初始化 git repo，commit
-3. bundle --dry-run 检查 transcripts
-4. 提交
+## 下一步（v2）
+1. 创建 main.ts entrypoint — 程序读取 entry 文本并写入 output/entry.txt
+2. 删除静态的 output/entry.txt（改为程序生成）
+3. 更新 STATUS.md（v2 — 需要 2+ 次写入）
+4. 重新 bundle 并提交
+
+## 程序逻辑
+- main.ts 硬编码 entry 文本 → 写入 output/entry.txt
+- 这是 program/v1 所需的 entrypoint
 
 ## 写作策略
 - 裁判读 very short fiction，被 quiet earned pride 打动
